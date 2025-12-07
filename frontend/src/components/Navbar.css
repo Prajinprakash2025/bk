@@ -1,0 +1,69 @@
+.navbar {
+  background-color: var(--color-bg);
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav-logo {
+  height: 60px; /* Constrain height */
+  width: auto;   /* Maintain aspect ratio */
+  object-fit: contain;
+  border-radius: 50%; /* Optional: if the logo is meant to be circular */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--color-gold);
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 0;
+}
+
+.nav-btn:hover {
+  color: var(--color-gold);
+}
+
+.cart-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

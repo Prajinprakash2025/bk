@@ -1,0 +1,61 @@
+.auth-container {
+    max-width: 400px;
+    margin: 8rem auto;
+    padding: 3rem;
+    background-color: rgba(10, 10, 10, 0.95);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    color: var(--color-text);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #aaa;
+}
+
+.form-group input {
+    padding: 0.8rem;
+    background-color: #000;
+    border: 1px solid #333;
+    color: #fff;
+    font-family: inherit;
+}
+
+.form-group input:focus {
+    border-color: var(--color-gold);
+    outline: none;
+}
+
+.error-message {
+    color: #ff4d4d;
+    background: rgba(255, 77, 77, 0.1);
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
